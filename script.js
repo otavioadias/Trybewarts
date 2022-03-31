@@ -6,7 +6,7 @@ function login() {
   buttonLogin.addEventListener('click', () => {
     if (emailLogin.value === 'tryber@teste.com' && passwordLogin.value === '123456') {
       alert('Olá, Tryber!');
-    } else if (emailLogin.value !== 'tryber@teste.com' && passwordLogin.value !== '123456') {
+    } else {
       alert('Email ou senha inválidos.');
     }
   });
