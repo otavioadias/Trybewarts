@@ -91,7 +91,7 @@ Você pode adicionar outros arquivos se julgar necessário. Qualquer dúvida, pr
 ## Data de entrega
 
 * Projeto em equipe.
-* Serão `1` dias de projeto.
+* Será `1` dias de projeto.
 * Data de entrega para avaliação final do projeto: `07/04/2022 14:00`.
 
 # Instruções para entregar seu projeto
