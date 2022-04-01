@@ -13,3 +13,15 @@ function login() {
 }
 
 login();
+
+const checkBox = document.querySelector('#agreement');
+const buttonSubmit = document.querySelector('#submit-btn');
+
+// Referência: https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked
+checkBox.onchange = function submitBtn() {
+  if (this.checked) {
+    buttonSubmit.disabled = false;
+  } else {
+    buttonSubmit.disabled = true;
+  }
+};
