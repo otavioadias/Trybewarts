@@ -27,3 +27,14 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#box-label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#box-label-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
