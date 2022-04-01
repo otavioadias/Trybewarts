@@ -25,3 +25,12 @@ checkBox.onchange = function submitBtn() {
     buttonSubmit.disabled = true;
   }
 };
+
+const textArea = document.querySelector('#textarea');
+
+textArea.addEventListener('input', ({ currentTarget: target }) => {
+  const counter = document.querySelector('#counter');
+  const maxLength = target.getAttribute('maxlength');
+  const currentLength = target.value.length;
+  counter.innerHTML = `${maxLength - currentLength} `;
+});
