@@ -34,3 +34,49 @@ textArea.addEventListener('input', ({ currentTarget: target }) => {
   const currentLength = target.value.length;
   counter.innerHTML = `${maxLength - currentLength} `;
 });
+
+function show() {
+  let localSt = JSON.parse(localStorage.getItem('Formulário'));
+  localSt = (Object.values(localSt));
+  const formulario = document.querySelector('#evaluation-form');
+  const form = document.createElement('ul');
+  form.classList = ('result');
+  for (let index = 0; index < localSt.length; index += 1) {
+    const specs = document.createElement('li');
+    specs.innerText = localSt[index];
+    form.appendChild(specs);
+  }
+  formulario.innerHTML = '';
+  formulario.appendChild(form);
+}
+
+function selected() {
+  const mat = document.querySelectorAll('.subject:checked');
+  let matValue = '';
+  for (let index = 0; index < mat.length; index += 1) {
+    if (index === mat.length - 1) {
+      matValue += `${mat[index].value}`;
+    } else {
+      matValue += `${mat[index].value}, `;
+    }
+  }
+  return matValue;
+}
+
+function saveForms(event) {
+  const name = document.querySelector('#input-name').value;
+  event.preventDefault();
+  const objectForms = {
+    Nome: `Nome: ${name} ${document.querySelector('#input-lastname').value}`,
+    Email: `Email: ${document.querySelector('#input-email').value}`,
+    Casa: `Casa: ${document.querySelector('#house').value}`,
+    Família: `Família: ${document.querySelector('input[name="family"]:checked').value}`,
+    Matérias: `Matérias: ${selected()}`,
+    Avaliação: `Avaliação: ${document.querySelector('input[name="rate"]:checked').value}`,
+    Observações: `Observações: ${document.querySelector('#textarea').value}`,
+  };
+  localStorage.setItem('Formulário', JSON.stringify(objectForms));
+  show();
+}
+
+buttonSubmit.addEventListener('click', saveForms);
