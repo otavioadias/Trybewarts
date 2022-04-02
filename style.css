@@ -1,7 +1,11 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://i.pinimg.com/originals/3f/e3/25/3fe325a2f73650c242de5442b82ecadd.png);
 }
 
 .header {
@@ -30,7 +34,7 @@ main {
   flex-direction: column;
   align-self: center;
   gap: 10px;
-  background-color: rgba(0, 0, 0, 0.042);
+  background-color: rgba(175, 132, 62, 0.575);
   padding: 0px 30px 10px;
   border-radius: 6px;
 }
@@ -63,6 +67,12 @@ main {
   width: 40px;
 }
 
+#trybewarts-header-title {
+  color: white;
+  font-family: 'Harry Potter', sans-serif;
+  font-weight: 200;
+}
+
 #button-login {
   padding: 5px;
   width: 70px;
@@ -79,6 +89,7 @@ main {
 #form-title {
   text-align: center;
   padding: 20px;
+  font-family: 'Harry Potter', sans-serif;
 }
 
 #box-name {
@@ -148,4 +159,10 @@ main {
   padding: 5px;
   margin-top: 10px;
   border-radius: 6px;
+}
+
+footer {
+  background-color: rgb(228, 173, 82);
+  display: flex;
+  justify-content: center;
 }
