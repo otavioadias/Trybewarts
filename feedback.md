@@ -23,7 +23,7 @@
 
 ---
 
-**Pessoas integrantes da dupla**: Gabriel Vinícius e Otávio Azevedo
+**Pessoas integrantes da dupla**: Gabriel Vinícius e Otávio Azevedo.
 
 ---
 
