@@ -5,13 +5,13 @@ body {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-image: url(https://i.pinimg.com/originals/3f/e3/25/3fe325a2f73650c242de5442b82ecadd.png);
+  background-image: url('https://i.pinimg.com/originals/3f/e3/25/3fe325a2f73650c242de5442b82ecadd.png');
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  padding: 5px 20px;
+  padding: 15px 20px;
   justify-content: space-between;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 main {
-  padding: 25px;
+  padding: 2rem 20px;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -35,8 +35,9 @@ main {
   align-self: center;
   gap: 10px;
   background-color: rgba(175, 132, 62, 0.575);
-  padding: 0px 30px 10px;
+  padding: 2rem;
   border-radius: 6px;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
@@ -49,12 +50,13 @@ main {
 #box-label-family {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 #box-label-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .result {
@@ -69,8 +71,9 @@ main {
 
 #trybewarts-header-title {
   color: white;
-  font-family: 'Harry Potter', sans-serif;
+  font-family: Harry Potter, sans-serif;
   font-weight: 200;
+  margin: 0;
 }
 
 #button-login {
@@ -80,7 +83,13 @@ main {
   border: none;
 }
 
-#email-login, #password-login  {
+#email-login {
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+#password-login {
   padding: 5px;
   border-radius: 6px;
   border: none;
@@ -88,8 +97,10 @@ main {
 
 #form-title {
   text-align: center;
-  padding: 20px;
-  font-family: 'Harry Potter', sans-serif;
+  font-family: Harry Potter, sans-serif;
+  margin-bottom: 25px;
+  margin-top: none;
+  padding: none;
 }
 
 #box-name {
@@ -97,57 +108,74 @@ main {
   gap: 5px;
 }
 
-#input-name, #input-lastname {
+#input-name {
   padding: 5px;
   border-radius: 6px;
   flex-grow: 4;
+  border: none;
+}
+
+#input-lastname {
+  padding: 5px;
+  border-radius: 6px;
+  flex-grow: 4;
+  border: none;
 }
 
 #box-email {
   display: flex;
   gap: 5px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
 }
 
-#input-email, #house {
+#input-email {
   padding: 5px;
   border-radius: 6px;
   flex-grow: 1;
+  border: none;
+  background-color: white;
 }
 
-#box-label-content {
-  display: flex;
-  flex-direction: column;
+#house {
+  padding: 5px;
+  border-radius: 6px;
+  flex-grow: 1;
+  border: none;
+  background-color: white;
 }
 
 #content {
   display: flex;
-  gap: 50px;
-  padding: 5px;
-  border-bottom: 1px solid gray;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
 }
 
 #box-label {
   display: flex;
-  max-width: 390px;
   flex-direction: column;
-  align-items: flex-end;
 }
 
-#first, #second {
+#first {
   display: flex;
-  gap: 15px;
-  padding: 3px;
+  gap: 20px;
+}
+
+#second {
+  display: flex;
+  gap: 20px;
 }
 
 .label-family {
-  padding-bottom: 5px;
+  display: flex;
+  align-items: baseline;
 }
 
 #box-label-rate {
   display: flex;
-  gap: 6px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 #label-rate {
@@ -157,12 +185,35 @@ main {
 #submit-btn {
   width: 100%;
   padding: 5px;
-  margin-top: 10px;
   border-radius: 6px;
+  border: none;
 }
 
 footer {
   background-color: rgb(228, 173, 82);
   display: flex;
   justify-content: center;
+}
+
+#textarea {
+  border: none;
+  border-radius: 6px;
+}
+
+#review-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 15px;
+}
+
+#submit-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#submit-check {
+  display: flex;
+  justify-content: space-between;
 }
