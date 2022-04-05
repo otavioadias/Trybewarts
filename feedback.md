@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 9
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Em relação a experiência de desenvolver um projeto em grupo, foi algo bem legal. Passamos por cenários onde na vida profissional será parte do nosso dia a dia, como: alinhamento de expectativas, distribuição de tarefas, comunicação efetiva, etc. 
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Gabriel Vinícius e Otávio Azevedo
 
 ---
 
