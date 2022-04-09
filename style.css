@@ -13,7 +13,7 @@ body {
 
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145);
+  background-color: #520;
   padding: 15px 20px;
   justify-content: space-between;
 }
@@ -83,6 +83,13 @@ main {
   width: 70px;
   border-radius: 6px;
   border: none;
+  color: #520;
+  background-color: #E8B15B;
+  cursor: pointer;
+}
+
+#button-login:hover {
+  background-color: #905901;
 }
 
 #email-login {
@@ -145,6 +152,7 @@ main {
   flex-grow: 1;
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 #content {
@@ -189,6 +197,13 @@ main {
   padding: 5px;
   border-radius: 6px;
   border: none;
+  color: #520;
+  background-color: #E8B15B;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: #905901;
 }
 
 footer {
